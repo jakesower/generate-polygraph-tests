@@ -6,3 +6,5 @@ const hiJson = require('./hi.json');
 console.log(hiJson);
 console.log(__dirname);
 console.log(__filename);
+
+console.log(path.dirname);
