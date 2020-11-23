@@ -7,4 +7,4 @@ console.log(hiJson);
 console.log(__dirname);
 console.log(__filename);
 
-console.log(path.dirname(fs.realpathSync('.')));
+console.log(process.cwd());
