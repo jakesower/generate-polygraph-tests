@@ -2,9 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const hiJson = require('./hi.json');
-console.log(hiJson);
-console.log(__dirname);
-console.log(__filename);
+const sourceDir = __dirname;
+const targetDir = process.cwd();
 
-console.log(process.cwd());
+fs.copyFileSync(path.join(sourceDir, '/', 'moo.txt'), path.join(targetDir, '/', 'moo.moo'));
