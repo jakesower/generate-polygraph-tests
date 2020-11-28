@@ -6,7 +6,7 @@ const sourceDir = __dirname;
 const targetDir = process.cwd();
 
 const sourcePath = pathStr => path.join(sourceDir, '/', ...pathStr.split('/'));
-const targetPath = pathStr => path.join(sourceDir, '/', ...pathStr.split('/'));
+const targetPath = pathStr => path.join(targetDir, '/', ...pathStr.split('/'));
 
 // fs.ensureDirSync(targetPath('pg-tests'));
 // fs.ensureDirSync(targetPath('pg-tests/schemata'));
