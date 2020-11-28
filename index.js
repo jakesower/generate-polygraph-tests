@@ -8,4 +8,4 @@ const targetDir = process.cwd();
 const sourcePath = pathStr => path.join(sourceDir, '/', ...pathStr.split('/'));
 const targetPath = pathStr => path.join(targetDir, '/', ...pathStr.split('/'));
 
-fs.copyFileSync(sourcePath('tests'), targetPath('pg-tests'));
+fs.copySync(sourcePath('tests'), targetPath('pg-tests'));
