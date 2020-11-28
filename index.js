@@ -4,11 +4,9 @@ const path = require('path');
 
 const sourceDir = __dirname;
 const targetDir = process.cwd();
+console.log({ sourceDir, targetDir });
 
 const sourcePath = pathStr => path.join(sourceDir, '/', ...pathStr.split('/'));
 const targetPath = pathStr => path.join(targetDir, '/', ...pathStr.split('/'));
-
-// fs.ensureDirSync(targetPath('pg-tests'));
-// fs.ensureDirSync(targetPath('pg-tests/schemata'));
 
 fs.copyFileSync(sourcePath('tests'), targetPath('pg-tests'));
