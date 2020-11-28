@@ -1,7 +1,9 @@
 {
   "name": "generate-polygraph-tests",
   "version": "0.0.0",
-  "bin": "index.js",
+  "bin": {
+    "generate-polygraph-tests": "index.js"
+  },
   "dependencies": {
     "fs-extra": "^9.0.1"
   }
